@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+var argv = require('yargs')
+  .boolean(['n'])
+  .argv;
+
+console.log('hello ', argv.n);

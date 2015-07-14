@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+var argv = require('yargs')
+  .option('n', {
+    boolean: true
+  })
+  .argv;
+
+console.log('hello ', argv.n);

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+var argv = require('yargs')
+  .option('n', {
+    alias : 'name',
+    demand: true,
+    default: 'tom',
+    describe: 'your name',
+    type: 'string'
+  })
+  .argv;
+
+console.log('hello ', argv.n);
